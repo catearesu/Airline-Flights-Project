@@ -4,28 +4,28 @@ USE Flights;
 -- Crear la tabla airlines
 DROP TABLE IF EXISTS airlines;
 CREATE TABLE airlines (
-  `IATA_CODE` VARCHAR(3),  -- Usar VARCHAR con longitud de 3 para códigos IATA
+  `IATA_CODE` VARCHAR(3), 
   `AIRLINE` TEXT,
-  CONSTRAINT PRIMARY KEY (IATA_CODE)  -- No es necesario un prefijo aquí
+  CONSTRAINT PRIMARY KEY (IATA_CODE)  
 );
 
 -- Crear la tabla airports
 DROP TABLE IF EXISTS airports;
 CREATE TABLE airports (
-  `IATA_CODE` VARCHAR(10),  -- Usar VARCHAR con longitud de 3 para códigos IATA
+  `IATA_CODE` VARCHAR(10), 
   `AIRPORT` TEXT,
   `CITY` TEXT,
   `STATE` TEXT,
   `COUNTRY` TEXT,
-  CONSTRAINT PRIMARY KEY (IATA_CODE)  -- No es necesario un prefijo aquí
+  CONSTRAINT PRIMARY KEY (IATA_CODE) 
 );
 
 -- Crear la tabla cancellation_codes
 DROP TABLE IF EXISTS cancellation_codes;
 CREATE TABLE cancellation_codes (
-  `CANCELLATION_REASON` VARCHAR(3),  -- Usar VARCHAR con longitud de 3 para códigos
+  `CANCELLATION_REASON` VARCHAR(3),
   `CANCELLATION_DESCRIPTION` TEXT,
-  CONSTRAINT PRIMARY KEY (CANCELLATION_REASON)  -- No es necesario un prefijo aquí
+  CONSTRAINT PRIMARY KEY (CANCELLATION_REASON) 
 );
 
 -- Crear la tabla flights
@@ -38,8 +38,8 @@ CREATE TABLE flights (
   `AIRLINE` VARCHAR(200),  
   `FLIGHT_NUMBER` BIGINT,
   `TAIL_NUMBER` VARCHAR(255), 
-  `ORIGIN_AIRPORT` VARCHAR(10),  -- Usar VARCHAR(3) para códigos de aeropuerto
-  `DESTINATION_AIRPORT` VARCHAR(10),  -- Usar VARCHAR(3) para códigos de aeropuerto
+  `ORIGIN_AIRPORT` VARCHAR(10),  
+  `DESTINATION_AIRPORT` VARCHAR(10),  
   `SCHEDULED_DEPARTURE` BIGINT,
   `DEPARTURE_TIME` DOUBLE,
   `DEPARTURE_DELAY` DOUBLE,
@@ -56,7 +56,7 @@ CREATE TABLE flights (
   `ARRIVAL_DELAY` DOUBLE,
   `DIVERTED` BIGINT DEFAULT NULL,
   `CANCELLED` BIGINT DEFAULT NULL,
-  `CANCELLATION_REASON` VARCHAR(3) DEFAULT NULL,  -- Usar VARCHAR(3) para códigos de cancelación
+  `CANCELLATION_REASON` VARCHAR(3) DEFAULT NULL, 
   `AIR_SYSTEM_DELAY` DOUBLE DEFAULT NULL,
   `SECURITY_DELAY` DOUBLE DEFAULT NULL,
   `AIRLINE_DELAY` DOUBLE DEFAULT NULL, 
