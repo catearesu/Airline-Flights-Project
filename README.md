@@ -12,7 +12,7 @@
 - [Resultados](#resultados)
 - [Conclusiones](#conclusiones)
 
-#### LINK TO DASHBOARD: 
+#### LINK TO DASHBOARD: https://public.tableau.com/app/profile/caterina.aresu/viz/AirlinesFlightsProject/Analisisgeneral
 
 # Introducción
 Cuantas veces nos ha pasado tenernos que ir de viaje y al llegar al aeropuerto nos hemos enterado de que nuestro vuelo ha sido cancelado o retrasado? 
@@ -156,7 +156,7 @@ Este análisis se centra en el motivo de las cancelaciones y en qué período se
 
 
 ## **4. Visualización de Resultados:**
-Para que os hagáis una idea más clara de los resultados podéis visualizar los datos a través de Tableau, link
+Para que os hagáis una idea más clara de los resultados podéis visualizar los datos a través de Tableau https://public.tableau.com/app/profile/caterina.aresu/viz/AirlinesFlightsProject/Analisisgeneral
 
 Realmente con tableau es más fácil y rápido ver patrones de vuelos, comparar retrasos y cancelaciones por aerolínea y mucho más.
 
