@@ -1,4 +1,4 @@
-<h2 align="center"> AIRLINE FLIGHTS PROJECT </h2> 
+<h2 align="center"> AIRLINES FLIGHTS PROJECT </h2> 
 
 <div align="center">
   <img src="Images/foto.jpeg" alt="Texto alternativo" width="500" height="400" />
@@ -12,7 +12,7 @@
 - [Resultados](#resultados)
 - [Conclusiones](#conclusiones)
 
-#### LINK TO DASHBOARD: https://public.tableau.com/app/profile/caterina.aresu/viz/AirlinesFlightsProject/Analisisgeneral
+#### LINK TO DASHBOARD: [Airlines Flights Project](https://public.tableau.com/app/profile/caterina.aresu/viz/AirlinesFlightsProject/Analisisgeneral)
 
 # Introducción
 Cuantas veces nos ha pasado tenernos que ir de viaje y al llegar al aeropuerto nos hemos enterado de que nuestro vuelo ha sido cancelado o retrasado? 
@@ -135,7 +135,7 @@ Este análisis se centra en el motivo de las cancelaciones y en qué período se
 
  <img src="Images/retraso por aeropuerto.png" alt="alt text" width="600"/>
 
-•	rango retrasos por aerolínea: retraso leve es hasta 1 hora, retraso moderado es entre 1 y 2 horas, retraso fuerte es entre 2 y 3 horas y el heavy es a partir de 3 horas
+•	rango retrasos por aerolínea: retraso leve es hasta 1 hora, retraso moderado es entre 1 y 2 horas, retraso fuerte/severo es entre 2 y 3 horas y el heavy/grave es a partir de 3 horas
 
  <img src="Images/rango retrasos por aerolinea.png" alt="alt text" width="900"/>
 
@@ -156,7 +156,7 @@ Este análisis se centra en el motivo de las cancelaciones y en qué período se
 
 
 ## **4. Visualización de Resultados:**
-Para que os hagáis una idea más clara de los resultados podéis visualizar los datos a través de Tableau https://public.tableau.com/app/profile/caterina.aresu/viz/AirlinesFlightsProject/Analisisgeneral
+Para que os hagáis una idea más clara de los resultados podéis visualizar los datos a través de Tableau [Airlines Flights Project](https://public.tableau.com/app/profile/caterina.aresu/viz/AirlinesFlightsProject/Analisisgeneral)
 
 Realmente con tableau es más fácil y rápido ver patrones de vuelos, comparar retrasos y cancelaciones por aerolínea y mucho más.
 
