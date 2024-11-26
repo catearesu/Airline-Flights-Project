@@ -15,11 +15,11 @@
 #### LINK TO DASHBOARD: [Airlines Flights Project](https://public.tableau.com/app/profile/caterina.aresu/viz/AirlinesFlightsProject/Analisisgeneral)
 
 # Introducción
-Cuantas veces nos ha pasado tenernos que ir de viaje y al llegar al aeropuerto nos hemos enterado de que nuestro vuelo ha sido cancelado o retrasado? 
+¿Cuántas veces nos ha pasado tenernos que ir de viaje y al llegar al aeropuerto nos hemos enterado de que nuestro vuelo ha sido cancelado o retrasado? 
 Personalmente no muchas, sin embargo existe la posibilidad de que un vuelo se cancele o se retrase.
 La idea de este proyecto se centra en el análisis de datos de vuelos aéreos cuyo objetivo es identificar tendencias y patrones importantes que nos permitan conocer qué aerolíneas tienen más probabilidades de sufrir cancelaciones o demoras, y cuáles son las más fiables.  
 
-He recolectado y analizado datos de 150 MIL vuelos de aerolíneas comerciales durante el año 2015 que incluyen información sobre aeropuertos, rutas, horarios de vuelos, aerolíneas, distancias, retrasos, cancelaciones y mucho más. El propósito es proporcionar una solución que permita tomar decisiones más informadas basadas en el análisis de datos masivos.
+He recolectado y analizado datos de 150 mil vuelos de aerolíneas comerciales de USA durante el año 2015 que incluyen información sobre aeropuertos, rutas, horarios de vuelos, aerolíneas, distancias, retrasos, cancelaciones y mucho más. El propósito es proporcionar una solución que permita tomar decisiones más informadas basadas en el análisis de datos masivos.
 
 Herramientas utilizadas: 
 - MySQL: Para almacenar, gestionar y consultar los resultados del análisis de datos.
@@ -46,7 +46,7 @@ Herramientas utilizadas:
 A continuación se describen las fases del proyecto:
 
 ## **1. Recolección y manipulación de datos:**
-Los datos de vuelos se han recopilado desde la web Maven Analitics. El dataset venía bastante limpio, el único inconveniente es que contenía más de 5 millones de registros por lo que he tenido que coger una muestra aleatoria de 150 mil. 
+Los datos de vuelos se han recopilado desde la web [Maven Analitics](https://mavenanalytics.io/data-playground?dataStructure=Multiple%20tables&order=date_added%2Cdesc&search=airline%20) . El dataset venía bastante limpio, el único inconveniente es que contenía más de 5 millones de registros por lo que he tenido que coger una muestra aleatoria de 150 mil. 
 He creado la base de datos desde Python, haciendo la conexión con MYSQL. 
 
 El procesamiento de datos se ha realizado en Python utilizando bibliotecas como Pandas para leer archivos CSV y convertirlos en DataFrames. Estos datos luego los he transformado y analizado para extraer información útil. 
@@ -68,7 +68,7 @@ Una vez creadas las 4 tablas, he insertado manualmente los valores de la tabla A
 
 mientras que para las tablas “Airlines” y “Cancellation Codes” he importado los datos directamente del CSV de la web original y para la tabla “flights” importé los datos desde Python (ya que el csv original, al tener más de 5 millones de registros, era muy pesado para cargar en mysql).
 
-## **3. Consultas SQL para Análisis:**
+## **3. Consultas SQL para el análisis:**
 Una vez he podido almacenar los datos en MySQL, he procedido a realizar consultas para extraer información de interés. Algunas consultas comunes incluyen:
 
 ### Visión global 
@@ -135,7 +135,7 @@ Este análisis se centra en el motivo de las cancelaciones y en qué período se
 
  <img src="Images/retraso por aeropuerto.png" alt="alt text" width="600"/>
 
-•	rango retrasos por aerolínea: retraso leve es hasta 1 hora, retraso moderado es entre 1 y 2 horas, retraso fuerte/severo es entre 2 y 3 horas y el heavy/grave es a partir de 3 horas
+•	rango retrasos por aerolínea: he considerado un retraso leve hasta 1 hora, retraso moderado entre 1 y 2 horas, retraso fuerte/severo entre 2 y 3 horas y el heavy/grave es a partir de 3 horas.
 
  <img src="Images/rango retrasos por aerolinea.png" alt="alt text" width="900"/>
 
@@ -144,7 +144,7 @@ Este análisis se centra en el motivo de las cancelaciones y en qué período se
  <img src="Images/rango retrasos por aeropuerto.png" alt="alt text" width="900"/>
 
 
- **Qué aerolineas parecen ser más fiables y cuales menos en terminos de salidas a tiempo?**
+ **¿Qué aerolineas parecen ser más fiables y cuales menos en terminos de salidas a tiempo?**
 
 
  <img src="Images/vuelos a tiempo.png" alt="alt text" width="600"/>
@@ -156,7 +156,7 @@ Este análisis se centra en el motivo de las cancelaciones y en qué período se
 
 
 ## **4. Visualización de Resultados:**
-Para que os hagáis una idea más clara de los resultados podéis visualizar los datos a través de Tableau [Airlines Flights Project](https://public.tableau.com/app/profile/caterina.aresu/viz/AirlinesFlightsProject/Analisisgeneral)
+Para que os hagáis una idea más clara de los resultados podéis visualizar e interaccionar con los datos directamente en Tableau [Airlines Flights Project](https://public.tableau.com/app/profile/caterina.aresu/viz/AirlinesFlightsProject/Analisisgeneral)
 
 Realmente con tableau es más fácil y rápido ver patrones de vuelos, comparar retrasos y cancelaciones por aerolínea y mucho más.
 
