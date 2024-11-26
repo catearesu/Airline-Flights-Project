@@ -454,7 +454,7 @@ ON f.ORIGIN_AIRPORT = origen.IATA_CODE
 JOIN airports destination 
 ON f.DESTINATION_AIRPORT = destination.IATA_CODE
 GROUP BY f.ORIGIN_AIRPORT, f.DESTINATION_AIRPORT, f.DISTANCE
-HAVING flights_cancelled > 0 OR flights_delayed > 0  -- Solo mostrar rutas con cancelaciones o retrasos
+HAVING flights_cancelled > 0 OR flights_delayed > 0  -- Solo muestro rutas con cancelaciones o retrasos
 ORDER BY porcentaje_cancelled DESC, porcentaje_delayed DESC;
 
 -- HORARIO DE SALIDA PROGRAMADA DE LOS VUELOS QUE TIENEN RETRASO/CANCELACIÓN
